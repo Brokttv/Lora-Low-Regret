@@ -42,7 +42,7 @@ Full Fine-tuning:
 ```bash
 python main.py --full-finetune --epochs 10
 ```
-
+---
 ## Parameters
 
 - `--lrs`: Learning rates to sweep (default: 1e-4 5e-4 1e-3)
