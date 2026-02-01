@@ -27,7 +27,7 @@ def main():
     
     # Load data
     print("Loading data...")
-    train_data, val_data, test_data = get_dataloaders()
+    train_data, val_data, test_data = get_dataloaders(batch_size = args.batch_size)
     
     results = {}
     
