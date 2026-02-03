@@ -30,7 +30,7 @@ The data shows that performance, as measured by validation loss, is influenced b
 For some reason, I discaraded gradient norms and went for the adapters final norm which revals the following insight:
 - When the model chooses a learning rate `10x` bigger than FullFT, `A` and `B` generally end up with very high magnitudes compared to FullFT final weights norm `w` at the optimal point, with `w = w_final - w_init`
 
-- When the optimal `lr` is only `3.33x` bigger, the adapters' norms saty close from FullFT's
+- When the optimal `lr` is only `3.33x` bigger, the adapters' norms stay close from FullFT's
   
   <br>
   <p align="center">
@@ -40,7 +40,7 @@ For some reason, I discaraded gradient norms and went for the adapters final nor
 
 This makes sense when considering that `B` is initialized to zero. When `α/r < 1`, the adapter updates are dampened even further, which slows down learning of both `A` and `B`. The model must push updates as aggressively as safely possible to escape initialization—especially critical given only 5 epochs of training.
 
-The opposite holds when `α/r > 1`: updates are amplified, so moderate learning rates suffice to ensure adapeters do not dievrge too far from the base signal.
+The opposite holds when `α/r > 1`: updates are amplified, so moderate learning rates suffice to ensure adapters do not diverge too far from the base signal.
 
 `B` is initialized to zero deliberately, allowing the frozen base model to provide inductive bias to the low-rank subspace so gradients are directed meaningfully from the start.
 ### Exceptions and Edge Cases
