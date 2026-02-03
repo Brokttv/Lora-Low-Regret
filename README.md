@@ -34,7 +34,7 @@ For some reason, I discaraded gradient norms and went for the adapters final nor
   
   <br>
   <p align="center">
-  <img src="assets/fig4.jpeg" width="600"/>
+  <img src="assets/fig4.jpeg" width="590"/>
 </p>
 <br>
 
