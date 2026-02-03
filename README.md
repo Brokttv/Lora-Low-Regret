@@ -1,4 +1,4 @@
-# Lora-Low-Regret
+# Lora-Without-Regret
 Reproducing Lora Low Regret blog from scratch (no HF) and investigating the LR 10x ratio.
 
 
