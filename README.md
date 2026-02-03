@@ -17,6 +17,12 @@ The data shows that performance, as measured by validation loss, is influenced b
 **General Pattern:**
 - When `alpha/r ≤ 1`, the `10×` ratio emerges
 - When `alpha/r > 1`, a `3.33×` ratio appears instead
+  
+  <br>
+  
+<p align="center">
+  <img src="assets/fig3.jpeg" width="1000"/>
+</p>
 
 ### Exceptions and Edge Cases
 
@@ -42,9 +48,17 @@ The specific values of `3.33×` and `33.3×` may be artifacts of this experiment
 
 **Fixed alpha = 32:**
 - All ranks converge to an optimal learning rate `10×` higher than full fine-tuning, except for smaller ranks (`8` and `16`)
+  
+<p align="center">
+  <img src="assets/fig1.jpeg" width="650"/>
+</p>
 
 **Fixed alpha = 8:**
 - All ranks optimize at the `10×` ratio
+   
+<p align="center">
+  <img src="assets/fig2.jpeg" width="650"/>
+</p>
 
 ### Performance Considerations
 
